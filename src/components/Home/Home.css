@@ -1,0 +1,41 @@
+.hero-text {
+    top: 0;
+    grid-column: 2/8;
+    grid-row: 1;
+    padding: 100px 20px 20px 20px;
+    height: 80vh;
+    text-align: center;
+}
+  
+.hero-text h1 {
+    font-size: 1.8em;
+    font-family: 'Roboto';
+}
+
+.hero-text h2 {
+      font-size: 2.0em;
+}
+
+.lower-container {
+    padding: 25px 20px 20px 20px;
+    grid-column: 1/9;
+    background: var(--primary);
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+}
+
+.lower-container-centered h2 {
+    font-size: 1.0em;
+    line-height: 2em;
+    color: #FFFFFF;
+}
+
+.lower-container h3 {
+    font-size: 1.2em;
+    color: #FFFFFF;
+    line-height: 2em;
+}
+
+.button {
+    padding-bottom: 10px;
+}
