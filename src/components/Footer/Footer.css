@@ -1,0 +1,24 @@
+footer {
+    padding: 30px 20px;
+    background-color: var(--primary);
+    color: white;
+}
+
+footer .copyright {
+    grid-column: 1/5;
+    font-size: 0.8em;
+}
+
+footer .social {
+    grid-column: 7/9;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer li {
+    margin: 0 6px;
+}
+
+footer img {
+    width: 20px;
+}

@@ -24,19 +24,19 @@ textarea {
 /* Base Styles */
 
 body {
-  background-color: #FFFFFF;
+  background-image: url('./images/dotGridBackground.png');
   overflow-x: hidden;
   font-family: 'Playfair Display';
 }
 
 .button {
-  background: none;
-  border: 2px solid var(--secondary);
-  color: var(--primary);
-  padding: 10px 6px;
-  text-transform: uppercase;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  background: var(--primary);
+  /* border: 2px solid var(--secondary); */
+  color: #FFFFFF;
+  padding: 10px 20px;
+  /* text-transform: uppercase; */
   display: inline-block;
+  cursor: pointer;
 }
 
 input,
@@ -94,17 +94,35 @@ h4 {
 
 /* Small Tablet Styles */
 @media screen and (min-width: 620px) {
+  body {
+    font-size: 18px;
+  }
 
+  .site-nav h1 {
+    grid-column: 1/3;
+  }
 }
 
 /* Large Tablets & Laptops Styles */
 
 @media screen and (min-width: 960px) {
+  body {
+    font-size: 20px;
+  }
 
+  .site-nav h1 {
+    grid-column: 1/3;
+  }
 }
 
 /* Desktop Styles */
 
 @media screen and (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
 
+  .site-nav h1 {
+    grid-column: 1/3;
+  }
 }

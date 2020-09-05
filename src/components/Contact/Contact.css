@@ -1,0 +1,26 @@
+#contact h1 {
+    padding-top: 30px;
+}
+
+#contact form {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#contact textarea {
+    height: 150px;
+}
+
+#contact .button {
+    margin-top: 10px;
+}
+

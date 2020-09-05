@@ -3,7 +3,7 @@
     grid-column: 2/8;
     grid-row: 1;
     padding: 100px 20px 20px 20px;
-    height: 80vh;
+    height: 70vh;
     text-align: center;
 }
   
@@ -16,15 +16,19 @@
       font-size: 2.0em;
 }
 
+.lower {
+    background: var(--primary);
+    grid-column: 1/9;
+}
+
 .lower-container {
     padding: 25px 20px 20px 20px;
     grid-column: 1/9;
-    background: var(--primary);
     text-align: center;
-    padding: 50px 20px 20px 20px;
+    padding: 50px 20px 50px 20px;
 }
 
-.lower-container-centered h2 {
+.lower-container h2 {
     font-size: 1.0em;
     line-height: 2em;
     color: #FFFFFF;
@@ -36,6 +40,29 @@
     line-height: 2em;
 }
 
-.button {
-    padding-bottom: 10px;
+#home .button  {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: var(--primary);
 }
+
+/* Small Tablet Styles */
+@media screen and (min-width: 620px) {
+  .hero-text {
+      grid-column: 1/6;
+      height: 80vh;
+      padding: 140px 20px 20px 100px;
+      text-align: left;
+  }
+
+  .lower-container {
+      grid-column: 2/8;
+  }
+}
+
+@media screen and (min-width: 960px) {
+    .hero-text {
+        grid-column: 1/6;
+        text-align: left;
+    }
+  }
