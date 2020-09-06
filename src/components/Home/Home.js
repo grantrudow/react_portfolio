@@ -6,12 +6,13 @@ import api from './images/api-50.png';
 import html from './images/html-5-50.png';
 import web from './images/web-50.png';
 import responsive from './images/responsive-50.png';
+import internet from './images/internet-50.png';
 
 const Home = () => {
 	return (
     <div className=" h-100">
       <div className="flex ph3-ns">
-        <div className="w-70 pa2 pt6">
+        <div className="hero-text w-70 pa2 pt6">
           <h2 className="roboto-text">Hello, my name is Grant</h2>
           <h1>I design and build custom digital products</h1>
         </div>
@@ -22,10 +23,10 @@ const Home = () => {
 
       <div className="flex pb5">
         <div className="fl w-30 pa2">
-          <img className="" alt="abstract art" src={columnDot} />
+          <img className="column-dot" alt="abstract art" src={columnDot} />
         </div>
         <div className="horizontal-center-flex w-70 pa2 pt5">
-          <h3 className="f2">I am passionate about building software and user experiences that improve people's lives.</h3>
+          <h3 className="f2 lower-hero-text">I am passionate about building software and user experiences that improve people's lives.</h3>
         </div>
       </div>
       <div className="bg-primary">
@@ -33,54 +34,51 @@ const Home = () => {
           <div className="fl w-100 pa2 tc">
               <h1>My Skills</h1>
           </div>
-          <div className = "pl5 center-flex">
-            <ul className="">
-              <li>
-                <div className="fs-flex pa3">
-                  <img src={html} className="pa1 h3 w3" alt="Avatar" />
-                  <div className="ph3">
-                    <h1 className="f3 f4-ns-fw6 white ">HTML & CSS</h1>
-                    <h2 className="f6 white fw2 ttu tracked roboto-text">Website Design & Production</h2>
-                  </div>
+          <div className="skills">
+            <div className = "grid">
+              <div className="skills-grid">
+                <img src={html} className="skills-img" alt="Avatar" />
+                <div className="skills-text">
+                  <h1>HTML & CSS</h1>
+                  <h2>Website Design & Production</h2>
                 </div>
-              </li>
-              <li>
-                <div className="fs-flex pa3">
-                  <img src={responsive} className="pa1 h3 w3" alt="Avatar" />
-                  <div className="ph3">
-                    <h1 className="f3 f4-ns-fw6 white ">Javascript</h1>
-                    <h2 className="f6 white fw2 ttu tracked roboto-text">Website Development</h2>
-                  </div>
+              </div>
+              <div className="skills-grid">
+                <img src={responsive} className="skills-img" alt="Avatar" />
+                <div className="skills-text">
+                  <h1>Javascript</h1>
+                  <h2>Website Development</h2>
                 </div>
-              </li>
-              <li>
-                <div className="fs-flex pa3">
-                  <img src={web} className="pa1 h3 w3" alt="Avatar" />
-                  <div className="ph3">
-                    <h1 className="f3 f4-ns-fw6 white ">React</h1>
-                    <h2 className="f6 white fw2 ttu tracked roboto-text">Custom Web Applications</h2>
-                  </div>
+              </div>
+              <div className="skills-grid">
+                <img src={web} className="skills-img" alt="Avatar" />
+                <div className="skills-text">
+                  <h1>React</h1>
+                  <h2>Custom Web Applications</h2>
                 </div>
-              </li>
-              <li>
-                <div className="fs-flex pa3">
-                  <img src={api} className="pa1 h3 w3" alt="Avatar" />
-                  <div className="ph3">
-                    <h1 className="f3 f4-ns-fw6 white ">Node.js & Express</h1>
-                    <h2 className="f6 white fw2 ttu tracked roboto-text">Server and Database Integration</h2>
-                  </div>
+              </div>
+              <div className="skills-grid">
+                <img src={api} className="skills-img" alt="Avatar" />
+                <div className="skills-text">
+                  <h1>Node.js & Express</h1>
+                  <h2>Server and Database Integration</h2>
                 </div>
-              </li>
-              <li>
-                <div className="fs-flex pa3">
-                  <img src={developer} className="pa1 h3 w3" alt="Avatar" />
-                  <div className="ph3">
-                    <h1 className="f3 f4-ns-fw6 white ">Python</h1>
-                    <h2 className="f6 white fw2 ttu tracked roboto-text">Automation/Backend Frameworks</h2>
-                  </div>
+              </div>
+              <div className="skills-grid">
+                <img src={developer} className="skills-img" alt="Avatar" />
+                <div className="skills-text">
+                  <h1>Python</h1>
+                  <h2>Automation/Backend Frameworks</h2>
                 </div>
-              </li>
-            </ul>
+              </div>
+              <div className="skills-grid">
+                <img src={internet} className="skills-img" alt="Avatar" />
+                <div className="skills-text">
+                  <h1>Responsive Websites</h1>
+                  <h2>Production website built for all devices</h2>
+                </div>
+              </div>
+            </div>
           </div>
         </div> 
       </div>
