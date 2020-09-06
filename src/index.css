@@ -24,105 +24,94 @@ textarea {
 /* Base Styles */
 
 body {
-  background-image: url('./images/dotGridBackground.png');
-  overflow-x: hidden;
   font-family: 'Playfair Display';
+  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.button {
-  background: var(--primary);
-  /* border: 2px solid var(--secondary); */
-  color: #FFFFFF;
-  padding: 10px 20px;
-  /* text-transform: uppercase; */
-  display: inline-block;
-  cursor: pointer;
-}
+/* Custom CSS Classes */
 
-input,
-textarea {
-  background: rgba(0,0,0, 0.17);
-  padding: 10px 16px;
-  border: 2px solid var(--secondary);
+.primary-color {
   color: var(--primary);
 }
 
-h1,
-h2,
-h3,
-h4 {
-  color: var(--primary);
+.secondary-color {
+  color: var(--secondary);
+}
+
+.roboto-text {
+  font-family: 'Roboto';
   font-weight: 300;
 }
 
-h1,
-h3 {
-  font-size: 1.2em;
+.vertical-center-flex {
+  display: flex;
+  justify-content: center;
 }
 
-h2 {
-  font-size: 1.6em;
+.horizontal-center-flex {
+  display: flex;
+  align-content: center;
 }
 
-h4 {
-  font-size: 1.1em;
+.center-flex {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
-/* Mobile Style */
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
+.fs-flex {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
 }
 
-.site-nav {
-  margin: 0 20px;
+.bg-primary {
+  background-color: var(--primary);
+  color: #FFFFFF;
 }
 
-.site-nav ul {
-  display: none;
+.bg-secondary {
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
-.site-nav h1 {
-  grid-column: 1/4;
-  grid-row: 1;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--primary);
-  font-size: 1.3em;
-}
 
-/* Small Tablet Styles */
-@media screen and (min-width: 620px) {
-  body {
-    font-size: 18px;
+/* Small Phones */
+
+@media screen and (min-width: 320px) {
+  #dot-grid {
+    width: auto;
+    height: 350px;
+    /* margin-left: 75px; */
+    padding-bottom: 50px;
   }
 
-  .site-nav h1 {
-    grid-column: 1/3;
-  }
-}
-
-/* Large Tablets & Laptops Styles */
-
-@media screen and (min-width: 960px) {
-  body {
-    font-size: 20px;
+  .footer-img {
+    width: auto;
+    height: 30px;
+    padding: 15px 8px 15px 8px;
   }
 
-  .site-nav h1 {
-    grid-column: 1/3;
+  .align-left {
+    justify-items: right;
   }
 }
 
-/* Desktop Styles */
 
-@media screen and (min-width: 1200px) {
-  body {
-    font-size: 22px;
-  }
+/* Small devices and phones */
 
-  .site-nav h1 {
-    grid-column: 1/3;
-  }
+@media screen and (min-width: 480px) {
+
+}
+
+/* Tablets */
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen (min-width: 992px) {
+
+
 }
