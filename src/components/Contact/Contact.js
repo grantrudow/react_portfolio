@@ -22,7 +22,7 @@ class Contact extends Component {
         
         axios({
             method: 'POST',
-            url: 'http://localhost:4444/send',
+            url: 'https://grant-rudow-portfolio-api.herokuapp.com/send',
             data: this.state
         })
         .then((response) => {
