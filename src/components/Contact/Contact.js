@@ -35,6 +35,7 @@ class Contact extends Component {
             data: this.state
         })
         .then((response) => {
+            console.log(response.data.status)
             if (response.data.status === 'success') {
                 alert('Message Sent');
                 this.resetForm()
