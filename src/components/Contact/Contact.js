@@ -17,6 +17,15 @@ class Contact extends Component {
         }
     }
 
+    resetForm = () => {
+        this.setState({
+            name: '',
+            email: '',
+            message: '',
+            buttonText: 'Sent'
+        })
+    }
+
     handleSubmit = (event) => {
         event.preventDefault();
         
@@ -35,14 +44,7 @@ class Contact extends Component {
         })
     }
 
-    resetForm = () => {
-        this.setState({
-            name: '',
-            email: '',
-            message: '',
-            buttonText: 'Sent'
-        })
-    }
+    
 
     onNameChange = (event) => {
         this.setState({name: event.target.value})
