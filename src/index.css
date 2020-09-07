@@ -207,6 +207,7 @@ nav a:hover {
   width: 100%;
   margin: 10px 0;
   border: 2px solid var(--secondary);
+  padding: 5px;
 }
 
 #contact input {
@@ -215,6 +216,8 @@ nav a:hover {
 
 #contact textarea {
   height: 200px;
+  font-size: 16px;
+  
 }
 
 #contact .button {
@@ -231,7 +234,12 @@ nav a:hover {
 
 }
 
-.lower-contact {
+.contact-form {
+  grid-column: span 8;
+}
+
+.contact-lower {
+  grid-column: span 8;
   background: var(--secondary);
 }
 
@@ -293,6 +301,7 @@ footer {
   .align-left {
     justify-items: right;
   }
+
 
 }
 
@@ -384,6 +393,28 @@ footer {
     margin-top: -300px;
   }
 
+  .contact-form {
+    grid-column: 5/9;
+  }
+  
+  .contact-lower {
+    grid-column: 1/5;
+    grid-row: 1;
+    background: transparent;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .nav-background {
+    grid-column: 1/5;
+    grid-row: 1;
+    top: 0;
+    margin-top: -150px;
+    margin-bottom: -150px;
+    background-color: var(--secondary);
+    z-index: -4;
+  }
+
   footer {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -420,4 +451,6 @@ footer {
     padding-left: 50px;
     margin-top: -300px;
   }
+
+
 }
