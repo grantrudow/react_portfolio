@@ -7,6 +7,8 @@ import html from './images/html-5-50.png';
 import web from './images/web-50.png';
 import responsive from './images/responsive-50.png';
 import internet from './images/internet-50.png';
+import SkillCard from './SkillCard';
+
 
 const Home = () => {
 	return (
@@ -33,51 +35,15 @@ const Home = () => {
         <div className="flex flex-column pt3 pb3">
           <div className="fl w-100 pa2 tc">
               <h1>My Skills</h1>
-          </div>
+          </div>  
           <div className="skills">
             <div className = "grid">
-              <div className="skills-grid">
-                <img src={html} className="skills-img" alt="Avatar" />
-                <div className="skills-text">
-                  <h1>HTML & CSS</h1>
-                  <h2>Website Design & Production</h2>
-                </div>
-              </div>
-              <div className="skills-grid">
-                <img src={responsive} className="skills-img" alt="Avatar" />
-                <div className="skills-text">
-                  <h1>Javascript</h1>
-                  <h2>Website Development</h2>
-                </div>
-              </div>
-              <div className="skills-grid">
-                <img src={web} className="skills-img" alt="Avatar" />
-                <div className="skills-text">
-                  <h1>React</h1>
-                  <h2>Custom Web Applications</h2>
-                </div>
-              </div>
-              <div className="skills-grid">
-                <img src={api} className="skills-img" alt="Avatar" />
-                <div className="skills-text">
-                  <h1>Node.js & Express</h1>
-                  <h2>Server and Database Integration</h2>
-                </div>
-              </div>
-              <div className="skills-grid">
-                <img src={developer} className="skills-img" alt="Avatar" />
-                <div className="skills-text">
-                  <h1>Python</h1>
-                  <h2>Automation/Backend Frameworks</h2>
-                </div>
-              </div>
-              <div className="skills-grid">
-                <img src={internet} className="skills-img" alt="Avatar" />
-                <div className="skills-text">
-                  <h1>Responsive Websites</h1>
-                  <h2>Production website built for all devices</h2>
-                </div>
-              </div>
+            <SkillCard skillName={'HTML & CSS'} skillDesc={'Website Design & Production'} skillPic = {html}/>
+            <SkillCard skillName={'Javascript'} skillDesc={'Website Development'} skillPic = {responsive}/>
+            <SkillCard skillName={'React'} skillDesc={'Custom Web Applications'} skillPic = {web}/>
+            <SkillCard skillName={'Node.js & Express'} skillDesc={'Server and Database Integration'} skillPic = {api}/>
+            <SkillCard skillName={'Python'}  skillDesc={'Automation/Backend Frameworks'} skillPic = {developer}/>
+            <SkillCard skillName={'Responsive Websites'} skillDesc={'Production websites built for all devices'} skillPic = {internet}/>
             </div>
           </div>
         </div> 

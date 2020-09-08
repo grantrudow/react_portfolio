@@ -26,18 +26,18 @@ class App extends React.Component {
       <div>
         <Router>
           <div>
-              <nav className="dt w-100 border-box pa3 ">
-                <div className="dtc v-mid mid-gray link dim w-25">
-                  <h1 className="dib w2 h2 br-100">GR</h1>   
+              <nav className="grid">
+                <div className="nav-logo">
+                  <Link to="/"><h1>GR</h1></Link>
                 </div>
-                <ul className="fe-flex pa2">
-                  <li className="pa4">
+                <ul className="nav-menu">
+                  <li>
                     <Link to="/">Home</Link>
                   </li>
-                  <li className="pa4">
+                  <li>
                     <Link to="/about">About</Link>
                   </li>
-                  <li className="pa4">
+                  <li>
                     <Link to="/contact">Contact</Link>
                   </li>
                 </ul>

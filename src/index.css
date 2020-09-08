@@ -27,7 +27,7 @@ textarea {
 body {
   font-family: 'Playfair Display';
   overflow-x: hidden;
-  
+  color: var(--primary);
 }
 
 nav a {
@@ -104,11 +104,30 @@ nav a:hover {
 
 /* Layout */
 
+.nav-logo {
+  grid-column: 2/3;
+}
+
+.nav-menu {
+  grid-column: 4/8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-menu li {
+  padding: 0px 8px;
+}
+
+
+
 .skills-grid {
   grid-column: 2/8;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   padding: 20px 20px 20px 20px;
+  background: var(--secondary);
+  border-radius: 20px;
 }
 
 .skills-text {
@@ -286,6 +305,8 @@ footer {
 /* Small Phones */
 
 @media screen and (min-width: 320px) {
+
+
   #dot-grid {
     width: auto;
     height: 350px;
@@ -302,6 +323,9 @@ footer {
     justify-items: right;
   }
 
+  .abstract-column {
+    padding-left: 60px;
+  }
 
 }
 
@@ -347,6 +371,10 @@ footer {
 
   body {
     font-size: 20px;
+  }
+
+  .nav-menu li {
+    padding: 0 12px;
   }
 
   .hero-text h2 {
@@ -430,6 +458,10 @@ footer {
     font-size: 22px;
   }
 
+  .nav-menu li {
+    padding: 0 15px;
+  }
+
   .column-dot {
     padding-left: 50px;
 
@@ -451,6 +483,5 @@ footer {
     padding-left: 50px;
     margin-top: -300px;
   }
-
 
 }
