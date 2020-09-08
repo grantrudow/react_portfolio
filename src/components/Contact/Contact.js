@@ -97,7 +97,7 @@ class Contact extends Component {
                 </div>
                 
                 <div className="contact-lower">
-                    <h3>Feel free to reach out with any questions or thoughts. I am always happy and willing to speak with you!</h3>
+                    <h3>Feel free to reach out to me using the form on this page. I am happy to answer any questions or thoughts you may have!</h3>
                     <div className="social-links">
                         <a href="www.instagram.com/lodestardev" target="_blank" rel="noopener noreferrer"><img className="instagram" alt="instagram" src={instagram} /></a>
                         <a href="www.github.com/grantrudow" target="_blank" rel="noopener noreferrer"><img className="github" alt="github" src={github} /></a>

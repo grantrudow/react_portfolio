@@ -15,11 +15,11 @@ const Home = () => {
 				</div>
 				<div id="design" className="border-secondary about-grid">
 					<h3>Design</h3>
-					<p>Once we have determined your goals, we will work together to design a product that will insure an unforgettable user experience for you customers.</p>
+					<p>Once we have determined your goals, we will work together to design a product that will ensure an unforgettable user experience for you customers.</p>
 				</div>
 				<div id="develop" className="border-secondary about-grid">
 					<h3>Develop</h3>
-					<p>I will engineer a digital product using the design and relationship we have built to produce a custom tailored product for your business.</p>
+					<p>I will engineer a digital product using the relationship and design we have cultivated to produce a custom product tailored to your business.</p>
 				</div>
 			</div>
 			<div className="about-lower">
