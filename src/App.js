@@ -9,7 +9,8 @@ import {
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer';
+import Portfolio from './components/Portfolio/Portfolio';
 
 class App extends React.Component {
   constructor() {
@@ -38,6 +39,9 @@ class App extends React.Component {
                     <Link to="/about">About</Link>
                   </li>
                   <li>
+                    <Link to='/portfolio'>My Work</Link>
+                  </li>
+                  <li>
                     <Link to="/contact">Contact</Link>
                   </li>
                 </ul>
@@ -46,6 +50,9 @@ class App extends React.Component {
             <Switch>
               <Route path="/about">
                 <About />
+              </Route>
+              <Route path="/portfolio">
+                <Portfolio />
               </Route>
               <Route path="/contact">
                 <Contact />

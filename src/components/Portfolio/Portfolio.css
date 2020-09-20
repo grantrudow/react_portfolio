@@ -1,0 +1,22 @@
+.portfolio > h1 {
+	grid-column: 1/9;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+.portfolio__work {
+	grid-column: 2/8;
+	height: 500px;
+}
+
+.portfolio__card {
+	grid-column: 1/9;
+}
+
+
+@media screen and (min-width: 900px) {
+	.portfolio__card {
+		grid-column: 2/8;
+		height: 300px;
+	}
+}

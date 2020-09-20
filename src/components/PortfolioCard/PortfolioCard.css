@@ -1,0 +1,32 @@
+.portfolioCard {
+	grid-column: span 2;
+	position: relative;
+}
+
+.portfolioCard  > img {
+	width: 95%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 25px;
+	filter: brightness(50%);
+	z-index: -500;
+	transition: filter 1s ease;
+}
+
+.portfolioCard  > img:hover {
+	filter: brightness(100%);
+}
+
+
+.portfolioCard__info {
+	position: absolute;
+	bottom: 10px;
+	right: 45px;
+    color: white;
+    text-align: right;
+	z-index: 2;
+}
+
+.portfolioCard__info:hover {
+	display: hidden;
+}
